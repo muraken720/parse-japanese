@@ -12,6 +12,8 @@
     "vfile": "^1.1.0"
   },
   "devDependencies": {
+    "browserify": "^11.2.0",
+    "esmangle": "^1.0.1",
     "espower-babel": "^3.3.0",
     "mocha": "^2.3.3",
     "power-assert": "^1.0.1",
@@ -38,6 +40,9 @@
     "url": "git+https://github.com/muraken720/parse-japanese.git"
   },
   "scripts": {
+    "build": "npm run bundle",
+    "bundle": "browserify index.js -s ParseJapanese > parse-japanese.js",
+    "postbundle": "esmangle parse-japanese.js > parse-japanese.min.js",
     "standard": "standard",
     "test": "mocha --compilers js:espower-babel/guess test/**/*.js"
   }
