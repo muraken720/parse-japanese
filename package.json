@@ -1,0 +1,44 @@
+{
+  "name": "parse-japanese",
+  "description": "Japanese (natural language) parser",
+  "version": "0.1.0",
+  "author": "Kenichiro Murata <kenichiro.murata@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/muraken720/parse-japanese/issues"
+  },
+  "dependencies": {
+    "jaco": "^1.2.1",
+    "kuromoji": "0.0.4",
+    "vfile": "^1.1.0"
+  },
+  "devDependencies": {
+    "espower-babel": "^3.3.0",
+    "mocha": "^2.3.3",
+    "power-assert": "^1.0.1",
+    "standard": "^5.3.1",
+    "unist-util-inspect": "^1.1.0"
+  },
+  "files": [
+    "index.js",
+    "lib"
+  ],
+  "homepage": "https://github.com/muraken720/parse-japanese#readme",
+  "keywords": [
+    "japanese",
+    "kuromoji.js",
+    "language",
+    "natural",
+    "nlcst",
+    "parser"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/muraken720/parse-japanese.git"
+  },
+  "scripts": {
+    "standard": "standard",
+    "test": "mocha --compilers js:espower-babel/guess test/**/*.js"
+  }
+}
