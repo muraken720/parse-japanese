@@ -10,7 +10,7 @@ nodes.
 [npm](https://docs.npmjs.com/cli/install):
 
 ```bash
-npm install parse-japanese
+npm install https://github.com/muraken720/parse-japanese.git
 ```
 
 ## Usage
@@ -119,10 +119,10 @@ Parameters:
 *   `value` ([`VFile`](https://github.com/wooorm/vfile) or `string`)
     — Text document;
 
-*   `cb` ([`Function`](#function-donecst)).
+*   `cb` ([`Function`](#function-cbcst)).
     — Callback function;
  
-#### function done(cst)
+#### function cb(cst)
 
 Callback invoked when the output is generated with the processed document.
 
