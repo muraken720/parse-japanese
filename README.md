@@ -95,7 +95,7 @@ japanese.parse(text, (cst) => {
 ## API
 
 *   [ParseJapanese(options?)](#parsejapaneseoptions)
-*   [ParseJapanese#parse(value)](#parsejapaneseparsevaluecb)
+*   [ParseJapanese#parse(value, cb)](#parsejapaneseparsevaluecb)
 
 ### ParseJapanese(options?)
 
