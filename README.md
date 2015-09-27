@@ -95,7 +95,7 @@ japanese.parse(text, (cst) => {
 ## API
 
 *   [ParseJapanese(options?)](#parsejapaneseoptions)
-*   [ParseJapanese#parse(value)](#parsejapaneseparsevalue)
+*   [ParseJapanese#parse(value)](#parsejapaneseparsevaluecb)
 
 ### ParseJapanese(options?)
 
@@ -106,7 +106,7 @@ Parameters:
 *   `options` (`Object`, optional)
 
     *   `position` (`boolean`, default: `true`) - Whether to add positional information to nodes.
-    *   `pos` (`boolean`, default: `false`) - Whether to add part-of-speech information(by using [kuromoji.js](https://github.com/takuyaa/kuromoji.js) to nodes.
+    *   `pos` (`boolean`, default: `false`) - Whether to add part-of-speech information(by using [kuromoji.js](https://github.com/takuyaa/kuromoji.js)) to nodes.
     *   `dicDir` (`string`, default: `../node_modules/kuromoji/dist/dict/`) - Whether to set Dictionaries directory for kuromoji.js.
                 
 
