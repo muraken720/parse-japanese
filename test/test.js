@@ -4,11 +4,10 @@ var assert = require('power-assert')
 
 var ParseJapanese = require('../')
 
-var select = require('unist-util-select');
+var select = require('unist-util-select')
 
-describe("ParseJapaneseTest", () => {
-  it("normal", (done) => {
-
+describe('ParseJapaneseTest', () => {
+  it('normal', (done) => {
     var options = {
       position: false,
       pos: false,

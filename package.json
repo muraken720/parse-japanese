@@ -51,6 +51,10 @@
     "ignore": [
       "parse-japanese.js",
       "parse-japanese.min.js"
+    ],
+    "globals": [
+      "describe",
+      "it"
     ]
   }
 }
