@@ -10,7 +10,7 @@ nodes.
 [npm](https://docs.npmjs.com/cli/install):
 
 ```bash
-npm install https://github.com/muraken720/parse-japanese.git
+npm install parse-japanese
 ```
 
 ## Usage
@@ -107,7 +107,7 @@ Parameters:
 
     *   `position` (`boolean`, default: `true`) - Whether to add positional information to nodes.
     *   `pos` (`boolean`, default: `false`) - Whether to add part-of-speech information(by using [kuromoji.js](https://github.com/takuyaa/kuromoji.js)) to nodes.
-    *   `dicDir` (`string`, default: `../node_modules/kuromoji/dist/dict/`) - Whether to set Dictionaries directory for kuromoji.js.
+    *   `dicDir` (`string`, default: `node_modules/parse-japanese/node_modules/kuromoji/dist/dict/`) - Whether to set Dictionaries directory for kuromoji.js.
                 
 
 ### ParseJapanese#parse(value, cb)
