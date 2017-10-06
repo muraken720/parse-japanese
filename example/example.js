@@ -1,13 +1,11 @@
 'use strict'
 
 var ParseJapanese = require('../')
-
 var inspect = require('unist-util-inspect')
 
 var options = {
   position: true,
-  pos: false,
-  dicDir: '../node_modules/kuromoji/dist/dict/'
+  pos: false
 }
 
 var japanese = new ParseJapanese(options)

@@ -1,8 +1,8 @@
 'use strict'
 
-var assert = require('power-assert')
-
+var assert = require('assert')
 var ParseJapanese = require('../')
+var path = require('path')
 
 var select = require('unist-util-select')
 
@@ -11,7 +11,7 @@ describe('ParseJapaneseTest', () => {
     var options = {
       position: false,
       pos: false,
-      dicDir: 'node_modules/kuromoji/dist/dict/'
+      dicDir: path.join(path.dirname(require.resolve('kuromoji')), '..', 'dict')
     }
 
     var japanese = new ParseJapanese(options)

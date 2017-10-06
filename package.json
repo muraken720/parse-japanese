@@ -8,17 +8,18 @@
   },
   "dependencies": {
     "jaco": "git+https://github.com/muraken720/jaco-js.git",
-    "kuromoji": "0.0.4",
-    "vfile": "^1.1.0"
+    "kuromoji": "0.1.1",
+    "vfile": "^2.2.0"
   },
   "devDependencies": {
-    "browserify": "^11.2.0",
+    "babel-preset-power-assert": "^1.0.0",
+    "babel-register": "^6.26.0",
+    "browserify": "^14.4.0",
     "esmangle": "^1.0.1",
-    "espower-babel": "^3.3.0",
-    "mocha": "^2.3.3",
-    "power-assert": "^1.0.1",
-    "standard": "^5.3.1",
-    "unist-util-inspect": "^1.1.0",
+    "mocha": "^4.0.1",
+    "power-assert": "^1.4.4",
+    "standard": "^10.0.3",
+    "unist-util-inspect": "^4.1.1",
     "unist-util-select": "^1.0.0"
   },
   "files": [
@@ -45,7 +46,7 @@
     "bundle": "browserify index.js -s ParseJapanese > parse-japanese.js",
     "postbundle": "esmangle parse-japanese.js > parse-japanese.min.js",
     "standard": "standard",
-    "test": "mocha --compilers js:espower-babel/guess test/**/*.js"
+    "test": "mocha --require babel-register 'test/**/*.js'"
   },
   "standard": {
     "ignore": [
